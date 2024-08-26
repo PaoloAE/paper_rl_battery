@@ -436,7 +436,7 @@ def test_policy(env_class, env_params, policy,actions_to_plot=400,suppress_show=
     #plot the data, and eventually save it as a pdf too
     plotting.plot_sac_logs(Path(f_running_rewards_name).parent.name, running_reward_file=f_running_rewards_name,
         running_loss_file=None,running_multi_obj_file= f_running_multi_objs_name, actions_file=f_actions_name,
-        actions_per_log=1, plot_to_file_line = None, suppress_show=suppress_show, extra_str="",
+        actions_per_log=1, plot_to_file_line = None, suppress_show=suppress_show, 
         actions_to_plot=actions_to_plot,actions_ylim=actions_ylim,dont_clear_output=dont_clear_output,
         k_notation=False, constant_actions_steps=False,plot_actions_separately=True,
         export_performance_pdf_location=export_performance_pdf_location)

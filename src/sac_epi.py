@@ -494,7 +494,7 @@ class SacTrain(object):
         #evaluates the policy
         return extra.test_policy(self.return_env_class_from_name(), self.s.env_params,
                      lambda o: self.get_action(torch.as_tensor(o,dtype=torch.float32,device=self.s.device),
-                     deterministic=True).cpu().numpy(), False,suppress_show=suppress_show,
+                     deterministic=True).cpu().numpy(), suppress_show=suppress_show,
                      actions_to_plot=actions_to_plot,dont_clear_output=dont_clear_output,
                      save_policy_to_file_name=save_policy_to_file_name, actions_ylim=actions_ylim,
                      export_performance_pdf_location=export_performance_pdf_location,
